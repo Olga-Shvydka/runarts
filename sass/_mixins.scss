@@ -1,0 +1,125 @@
+$mainFont: 'helveticaneuecyrroman', Helvetica, Arial, sans-serif;
+$mainFontMedium: 'helveticaneuecyrmedium', Helvetica, Arial, sans-serif;
+$mainFontBold: 'helveticaneuecyrbold', Helvetica, Arial, sans-serif;
+$mainFontLight: 'helveticaneuecyrlight', Helvetica, Arial, sans-serif;
+
+$mainColor: #4a4a4a;
+$darkColor: #444;
+$greyColor: #a0a0a0;
+$greyColor2: #9b9b9b;
+$darkGreyColor: #7e7e7e;
+$lightGreyColor: #e4e4e4;
+$linkColor: #6d9cbd;
+$borderColor: #ccc;
+
+$whiteColor: #fff;
+$lightBlueColor: #b4d3e8;
+$blueColor: #6d9cbd;
+
+$bodyBgColor: #f2f2f2;
+$whiteBgColor: #fff;
+$darkBg: #242424;
+$navyBlueBg: #6d9cbd;
+$blueBg: #509ec0;
+$blue2: #4b93b3;
+$blue3: #468aa8;
+
+$icons-spacing: 20px;
+@import "icons/*.png";
+
+@mixin image-size($path) {
+  width: image-width($path);
+  height: image-height($path);
+}
+
+%clr {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+%text-hide {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+%wrapper-inline-block {
+  display: table; /* For Safari */
+  font-size: 0;
+}
+
+@mixin inputs-text {
+  input[type="text"], input[type="password"], input[type="email"], textarea {
+    @content;
+  }
+}
+
+@mixin e-button {
+  input[type="submit"], input[type="button"], button, a {
+    @content;
+  }
+}
+
+@mixin placeholder-color($color) {
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin arrow($direction, $color, $size, $castomValue: 'no'){
+  display: block;
+  height: 0;
+  width: 0;
+  @if($castomValue =='no'){
+    @if $direction == 'top' {
+      border-left: $size outset transparent;
+      border-right: $size outset transparent;
+      border-bottom: $size solid $color;
+    } @else if $direction == 'right' {
+      border-top: $size solid transparent;
+      border-bottom: $size solid transparent;
+      border-left: $size solid $color;
+    } @else if ($direction == 'bottom'){
+      border-top: $size solid $color;
+      border-right: $size solid transparent;
+      border-left: $size solid transparent;
+    } @else if $direction == 'left' {
+      border-top: $size solid transparent;
+      border-right: $size solid $color;
+      border-bottom: $size solid transparent;
+    } @else if $direction == 'top-left' {
+      border-top: $size solid $color;
+      border-right: $size solid transparent;
+    } @else if $direction == 'top-right' {
+      border-top: $size solid $color;
+      border-left: $size solid transparent;
+    } @else if $direction == 'bottom-left' {
+      border-bottom: $size solid $color;
+      border-right: $size solid transparent;
+    } @else if $direction == 'bottom-right' {
+      border-bottom: $size solid $color;
+      border-left: $size solid transparent;
+    }
+  }@else{
+    @if ($direction == 'bottom'){
+      border-top: $castomValue solid $color;
+      border-right: $size solid transparent;
+      border-left: $size solid transparent;
+    }
+    @if ($direction == 'top') {
+      border-left: $size outset transparent;
+      border-right: $size outset transparent;
+      border-bottom: $castomValue solid $color;
+    }
+  }
+}

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Runarts - Profile Settings</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="page-wrapper profile-settings-page">
+
+        <!-- header -->
+        <header class="header navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo" href="#">Logo</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav main-nav">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Наши игры</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Карьера</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right navbar-right-logged-in">
+                        <li><a class="profile-link notification" href="profile.html">Кирилл Шевага <span><img src="images/temporary/users/img-link-profile.png" alt="Кирилл Шевага"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- top container -->
+        <div class="top-container">
+            <div>
+                <div class="container personal-info">
+                    <h2>Личные данные</h2>
+                    <div class="main-info clearfix">
+                        <form action="#">
+                            <div class="pull-left">
+                                <div class="img-user">
+                                    <img src="images/temporary/users/user-img-big.png" alt="Кирилл Шевага">
+                                    <span class="e-close">x</span>
+                                </div>
+                                <div class="input-file-group">
+                                    <span class="btn-file">
+                                        Загрузить новое фото <input type="file">
+                                    </span>
+                                    <span class="file"></span>
+                                </div>
+                            </div>
+                            <div class="m-oh">
+                                <div class="row custom-row">
+                                    <div class="col-md-4 custom-col-md-40">
+                                        <div class="form-group">
+                                            <label for="userName">Имя пользователя</label>
+                                            <div class="wrap-input">
+                                                <input type="text" class="form-control" id="userName" value="Кирилл Ше">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 custom-col-md-60">
+                                        <div class="form-group">
+                                            <label for="userCaption">Подпись</label>
+                                            <div class="wrap-input">
+                                                <input type="text" class="form-control" id="userCaption" value="UI/UX-designer">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="userSite">Сайт</label>
+                                            <div class="wrap-input wrap-input-link wrap-input-site">
+                                                <input type="text" class="form-control" id="userSite">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="userSkype">skype</label>
+                                            <div class="wrap-input wrap-input-link wrap-input-skype">
+                                                <input type="text" class="form-control" id="userSkype">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="userVk">вконтакте</label>
+                                            <div class="wrap-input wrap-input-link wrap-input-vk">
+                                                <input type="text" class="form-control" id="userVk">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="userFacebook">Facebook</label>
+                                            <div class="wrap-input wrap-input-link wrap-input-facebook">
+                                                <input type="text" class="form-control" id="userFacebook">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="userTwitter">Twitter</label>
+                                            <div class="wrap-input wrap-input-link wrap-input-twitter">
+                                                <input type="text" class="form-control" id="userTwitter">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="userInstagram">Instagram</label>
+                                            <div class="wrap-input wrap-input-link wrap-input-instagram">
+                                                <input type="text" class="form-control" id="userInstagram">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top container -->
+
+        <!-- container -->
+        <div class="container settings-profile">
+            <h2>НАСТРОЙКИ АККАУНТА</h2>
+            <form>
+                <div class="form-group">
+                    <label for="userEmail">E-mail</label>
+                    <div class="wrap-input">
+                        <input type="email" class="form-control" id="userEmail" value="ktiar.s@gmail.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">Смена пароля</label>
+                    <div class="wrap-input">
+                        <input type="password" class="form-control" id="newPassword" placeholder="Введите новый пароль">
+                    </div>
+                </div>
+                <div class="form-group wrap-newsletter">
+                    <input type="checkbox" id="newsletter" name="checkbox"><label for="newsletter">Рассылка runarts  (ЕЖЕНЕДЕЛЬНЫЙ ДАЙДЖЕСТ, НОВОСТИ, ОБНОВЛЕНИЯ)</label>
+                </div>
+                <div class="wrap-btn-group">
+                    <button type="submit" class="btn btn-lg btn-primary btn-br-radius">Сохранить</button>
+                    <button type="reset" class="btn btn-lg btn-hv-red btn-br-radius">Отмена</button>
+                </div>
+            </form>
+        </div>
+        <!-- end container -->
+
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-icons">
+                        <li class="vk"><a target="_blank" href="#"><i class="fa fa-vk"></i></a></li>
+                        <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="instagram"><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center"><a class="navbar-brand" href="#"><img src="images/logo-grey.png" alt="Logo"></a></div>
+                <div class="col-md-4">
+                    <ul class="contacts">
+                        <li><a href="mailto:help@runarts.com">help@runarts.com</a></li>
+                        <li>+38 066 900 50 88</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- back to top -->
+    <span id="top-link" class="wrap-btn-top hidden">
+        <a href="#top" class="btn-top">
+            Back to Top
+        </a>
+    </span>
+    <!-- end back to top -->
+
+</div>
+
+<script src="js/lib/jquery-1.11.3.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
